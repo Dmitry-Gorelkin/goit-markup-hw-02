@@ -1,7 +1,10 @@
 :root {
 	--logo-part-color: #2196F3; /* цвет части логотипа */
 	--main-accent-color: #2196F3; /* цвет наведении */
-
+	--header-nav-color: #212121; /* цвет навигации */
+	--header-text-color: #757575; /* цвет остального текста шапки */
+	--main-title-sm-color: #212121; /* цвет цвет заголовкоц низшего уровня */
+	--main-text-color: #757575; /* цвет текста */
 }
 
 /*********************ГЛОБАЛЬНЫЕ СТИЛИ*********************/
@@ -61,7 +64,7 @@ body {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	color: #212121;
+	color: var(--header-nav-color);
 }
 
 .header-contacts-list {
@@ -77,7 +80,7 @@ body {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	color: #757575;
+	color: var(--header-text-color);
 }
 
 .header-nav-link:hover,
@@ -119,6 +122,7 @@ body {
 }
 
 .footer-address-link {
+	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 1.71;
@@ -127,6 +131,7 @@ body {
 }
 
 .footer-contacts-link {
+	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 1.71;
@@ -166,6 +171,8 @@ body {
 }
 
 .heading-button {
+	font-family: Roboto;
+	font-style: normal;
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 1.87;
@@ -178,6 +185,11 @@ body {
 	background: #188CE8;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
+}
+
+.heading-button:hover,
+.heading-button:focus {
+	background: var(--main-accent-color);
 }
 
 /*********************FEATURES*********************/
@@ -200,7 +212,7 @@ body {
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: #212121;
+	color: var(--main-title-sm-color);
 }
 
 .features-text {
@@ -208,7 +220,7 @@ body {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-	color: #757575;
+	color: var(--main-text-color);
 }
 
 /*********************ACTIVITY*********************/
@@ -223,7 +235,7 @@ body {
 	line-height: 1.16;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: #212121;
+	color: var(--main-title-sm-color);
 }
 
 .activity-list {
@@ -250,7 +262,7 @@ body {
 	line-height: 1.16;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: #212121;
+	color: var(--main-title-sm-color);
 }
 
 .team-list {
@@ -271,7 +283,7 @@ body {
 	line-height: 1.19;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: #212121;
+	color: var(--main-title-sm-color);
 }
 
 .taam-text {
@@ -280,7 +292,7 @@ body {
 	line-height: 1.19;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: #757575;
+	color: var(--main-text-color);
 }
 
 
@@ -306,6 +318,8 @@ body {
 }
 
 .portfolio-button {
+	font-family: Roboto;
+	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
@@ -337,7 +351,7 @@ body {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
-	color: #212121;
+	color: var(--main-title-sm-color);
 }
 
 .portfolio-content-text {
@@ -345,5 +359,5 @@ body {
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.03em;
-	color: #757575;
+	color: var(--main-text-color);
 }
